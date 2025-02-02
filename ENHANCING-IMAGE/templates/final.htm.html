@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image processing </title>
+    <link rel="stylesheet" href="../static/final.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Image processing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/About"><b>About</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/"><b>Document</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"><b>Disabled</b></a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+                <button class="btn btn-outline-success mx-2" type="submit">Login</button>
+                <button class="btn btn-outline-success mx-2" type="submit">Signup</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-3">
+        <h1 class="fs-5 text"><b>Image processing-Edit your image</h1>
+          <form method="POST" action="/upload" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image">Choose an image to process:</label>
+                <input type="file" name="image" id="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="option">Choose an image processing option:</label>
+                <select name="option" id="option">
+                  <option selected>Choose an operation</option>
+                    <option value="grayscale">Grayscale Conversion</option>
+                    <option value="equalizer">equalizer</option>
+                    <option value="restoration">Image Restoration</option>
+                    <option value="brightness">Adjust Brightness</option>
+                    <option value="sharpen">Sharpen Image</option>
+                    <option value="rotate">Rotate Image</option>
+                    <option value=" edge_detection"> edge_detection</option>
+                    <option value="histogram_equalization">histogram_equalization</option>
+                    <option value="flip_horizontal">flip_horizontal</option>
+                    <option value="flip_vertical">flip_vertical</option>
+                    <option value="noise_reduction">Smoothing</option>
+                    <option value="invert_colors">invert_colors</option>
+                    <option value="crop_image">crop_image </option>
+                    <option value="sepia">NIGHT BRIGHT</option>
+                    <option value="morph_gradient">morph_gradient</option>
+                    <option value="grain_effect">grain_effec</option>
+                    <option value="colorize_image">colorize_image</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="upload">
+            </div>
+        </form>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

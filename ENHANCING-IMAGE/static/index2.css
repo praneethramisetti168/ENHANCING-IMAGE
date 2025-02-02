@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/214962.jpg);
+    text-align: center;
+}
+ul.create{
+    display:inline-block;
+    text-align: center;
+    display: flex;
+    padding: 2px;
+}
+.section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+img.img1{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(95, 83, 83);
+    width:500px ;
+    height: 300px;
+}
+ul.update{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.hero{
+    width: 600px;
+    height:70px;
+    display:flex;
+}
+.ra{
+    display: flex;
+    justify-content:space-around;
+    color: whitesmoke;
+}
+.raa{
+    
+}
+img.img2{
+    width:100px;
+    height: 150px;
+    margin-left: 30px;
+    margin-right:30px ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px grey;
+}
+div.list{
+    
+}
